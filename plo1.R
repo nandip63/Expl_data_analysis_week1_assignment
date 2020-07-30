@@ -1,0 +1,5 @@
+df=read.csv("C:/Users/use/Documents/new_R/new_R/assgn1_explore.csv")
+str(df)
+png("plot1.png", width=480, height=480)
+hist(df$Global_active_power,col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+dev.off()

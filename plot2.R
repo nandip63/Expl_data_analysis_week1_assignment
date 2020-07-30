@@ -1,0 +1,6 @@
+df=read.csv("C:/Users/use/Documents/new_R/new_R/assgn1_explore.csv")
+str(df)
+df$dt=strptime(paste(df$Date,df$Time,sep=" "),"%d-%m-%y %H:%M:%S")
+png("plot2.png", width=480, height=480)
+plot(df$dt, df$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()
